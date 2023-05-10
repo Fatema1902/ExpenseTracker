@@ -3,6 +3,7 @@ import mountainImage from './anaimg13.jpg';
 import { Anchor } from "@mantine/core";
 
 
+
 function HomePage() {
     return (
         <div className="homepage">
@@ -43,7 +44,7 @@ function HomePage() {
 
             <h2 className="homepage__section-titles" id="content">Leading a Richer Life</h2>
             <p className="homepage__section-description">
-                Our mission at Budgetbakers is to help you lead a Organised life.
+                Our mission at Expensotrackers is to help you lead a Organised life.
                 Building a picture of all your assets, monitoring your money and controlling your spending has one purpose,
                 and one purpose only: to lead to a richer life.
             </p>
@@ -58,7 +59,7 @@ function HomePage() {
                 </div>
 
                 <div className="cards">
-                    <img src={mountainImage} />
+                    <img src={mountainImage} alt="Image Not Found" />
                 </div>
 
                 <div className="cardz">
@@ -84,7 +85,7 @@ function HomePage() {
                 If you have any questions or feedback, please don't hesitate to
                 get in touch with us. You can reach us by email at
                 <a href="Expenso:support@expensetrackerapp.com">
-                    support@expensetrackerapp.com
+                    support@expensotrackerapp.com
                 </a>
                 or by phone at +1 (555) 123-4567.
             </p>

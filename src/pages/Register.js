@@ -15,8 +15,12 @@ import cryptojs from "crypto-js";
 import { showNotification } from "@mantine/notifications";
 import { useDispatch } from "react-redux";
 import { HideLoading, ShowLoading } from "../redux/alertsSlice";
+// import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+import './Login';
 
 function Register() {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const registerForm = useForm({
     initialValues: {
@@ -58,7 +62,9 @@ function Register() {
           showNotification({
             title: "User created successfully",
             color: "green",
-          });
+          }
+         )
+         navigate("/login");
         } else {
           showNotification({
             title: "Something went wrong",
