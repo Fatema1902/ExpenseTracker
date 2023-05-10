@@ -31,6 +31,9 @@
 .items-end {
   align-items: flex-end;
 }
+/* .new{
+  background-image: url(anaimg13.jpg);
+} */
 
 
 .loader-parent{
@@ -70,8 +73,52 @@ input{
 }
 
 .auth{
-  background-color: #12B886;
+  
+  background-image: url(LoginBg.png); 
+  background-repeat: no-repeat;
+  background-size: 900px 700px;
+  background-position-y: 70%;
+  background-position-x: 10%;
+  color: #12b886; 
 }
+
+.form{
+ position: absolute;
+ top: 20%;
+ right: 25%;
+ transform: translate(50%,60%);
+ width: 480px;
+
+}
+.form-register{
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  transform: translate(50%,40%);
+  width: 480px;
+ 
+ }
+.title{
+  position: absolute;
+  top: 4%;
+  font-style:initial;
+   right: 30%;
+  transform: translate(70%,50%);
+  font-size: 60px;
+  color: #12b886;
+
+}
+.title-register{
+  position: absolute;
+  top: 4%;
+  font-style:initial;
+   right: 30%;
+  transform: translate(70%,50%);
+  font-size: 60px;
+  color: #12b886;
+
+}
+
 .homepage {
   background-color: azure;
   }

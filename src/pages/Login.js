@@ -16,6 +16,7 @@ import { showNotification } from "@mantine/notifications";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { HideLoading, ShowLoading } from "../redux/alertsSlice";
+// import "../LoginBg.png";
 
 function Login() {
   const dispatch = useDispatch();
@@ -77,7 +78,12 @@ function Login() {
   };
 
   return (
-    <div className="flex h-screen justify-center items-center auth">
+   
+    <div className="flex h-screen justify-center  items-center auth">
+       <div className="title"> <b> BUDGET <br/>
+                               TRACKING APP </b></div>
+       <div className="form">
+       
       <Card
         sx={{
           width: 400,
@@ -85,7 +91,7 @@ function Login() {
         }}
         shadow="lg"
         withBorder
-      >
+       display="block">
         <Title order={2} mb={5}
          color="gray"
         >
@@ -116,6 +122,7 @@ function Login() {
           </Stack>
         </form>
       </Card>
+     </div>
     </div>
   );
 }

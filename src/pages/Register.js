@@ -83,6 +83,10 @@ function Register() {
   };
   return (
     <div className="flex h-screen justify-center items-center auth">
+      <div className="title-register"> <b> BUDGET <br/> TRACKING APP </b></div>
+      <div className="form-register">
+
+      
       <Card
         sx={{
           width: 400,
@@ -91,6 +95,7 @@ function Register() {
         shadow="lg"
         withBorder
       >
+      
         <Title order={2} mb={5} color='gray'>
            EXPENSO - REGISTER
         </Title>
@@ -125,6 +130,7 @@ function Register() {
           </Stack>
         </form>
       </Card>
+      </div>
     </div>
   );
 }
