@@ -80,13 +80,14 @@ function Login() {
   return (
    
     <div className="flex h-screen justify-center  items-center auth">
-       <div className="title"> <b> BUDGET <br/>
+       <div className="title"> <b> EXPENSE <br/>
                                TRACKING APP </b></div>
        <div className="form">
        
       <Card
         sx={{
           width: 400,
+         
           padding: "sm",
         }}
         shadow="lg"

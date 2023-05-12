@@ -1,4 +1,4 @@
-import {  Group, Table } from "@mantine/core";
+import {  Card, Group, Table } from "@mantine/core";
 import React from "react";
 import moment from "moment";
 import { useDispatch } from "react-redux";
@@ -39,7 +39,8 @@ function TransactionTable({
   };
 
   const getRows = transactions.map((transaction) => (
-    <tr key={transaction.name}>
+   
+   <tr key={transaction.name}>
       <td>{transaction.name}</td>
       <td>{transaction.type?.toUpperCase()}</td>
       <td>{transaction.amount}</td>
@@ -71,7 +72,7 @@ function TransactionTable({
 
   return (
     <div>
-     
+      <Card>
        <Table verticalSpacing="md" fontSize="sm" striped>
        <thead>
         <tr>
@@ -88,6 +89,7 @@ function TransactionTable({
     
     
     </Table> 
+    </Card>
    
   
    

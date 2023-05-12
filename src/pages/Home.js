@@ -11,11 +11,8 @@ import TransactionTable from "../components/TransactionTable";
 import Filters from "../components/Filters";
 import moment from "moment";
 import Analytics from "../components/Analytics";
-// import { useReactToPrint } from "react-to-print";
 
 function Home() {
-  // const componentPDF = useReactToPrint(); 
-
   const [view, setView] = React.useState("table");
   const [filters, setFilters] = React.useState({
     type: "",
@@ -109,11 +106,11 @@ function Home() {
   // })
 
   return (
-    
+
     <Box
-     mx={50}
+      mx={50}
     >
-       {/* <div ref={componentPDF} style={{width:'100%'}}> */}
+      {/* <div ref={componentPDF} style={{width:'100%'}}> */}
       <Header />
       <div className="container">
         <Card>
@@ -153,7 +150,7 @@ function Home() {
               </Button>
             </Group>
           </div>
-          <Divider mt={20}/>
+          <Divider mt={20} />
           {view === "table" && (
             <TransactionTable
               transactions={transactions}
@@ -183,13 +180,8 @@ function Home() {
           getData={getData}
         />
       </Modal>
-      
-    {/* <div className="d-grid d-md-flex justify-content-md-end mb-3">
-      <Button className="btn btn-success" onClick={generatePDF}> Download </Button>
-    </div>  */}
-    {/* </div> */}
     </Box>
-    
+
   );
 }
 

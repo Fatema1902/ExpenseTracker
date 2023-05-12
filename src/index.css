@@ -74,9 +74,9 @@ input{
 
 .auth{
   
-  background-image: url(LoginBg.png); 
+  background-image: url(Bg.webp); 
   background-repeat: no-repeat;
-  background-size: 900px 700px;
+  background-size: 600px 500px;
   background-position-y: 70%;
   background-position-x: 10%;
   color: #12b886; 
@@ -84,7 +84,7 @@ input{
 
 .form{
  position: absolute;
- top: 20%;
+ top: 10%;
  right: 25%;
  transform: translate(50%,60%);
  width: 480px;
@@ -92,17 +92,18 @@ input{
 }
 .form-register{
   position: absolute;
-  top: 20%;
+  top: 1%;
   right: 25%;
-  transform: translate(50%,40%);
+  transform: translate(50%,55%);
   width: 480px;
  
  }
 .title{
   position: absolute;
-  top: 4%;
+  top: -5%;
   font-style:initial;
-   right: 30%;
+  right: auto;
+  left:auto;
   transform: translate(70%,50%);
   font-size: 60px;
   color: #12b886;
@@ -110,11 +111,12 @@ input{
 }
 .title-register{
   position: absolute;
-  top: 4%;
+  top: -5%;
   font-style:initial;
-   right: 30%;
+   right: auto;
+   left:auto;
   transform: translate(70%,50%);
-  font-size: 60px;
+  font-size: 55px;
   color: #12b886;
 
 }
@@ -234,7 +236,7 @@ input{
     .btn{
       float: bottom;
       position: fixed;
-    /* width: 20%; */
+    
     margin-right: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -243,4 +245,5 @@ input{
 
 
     }
+    
     
