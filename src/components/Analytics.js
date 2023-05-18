@@ -175,8 +175,10 @@ function Analytics({ transactions }) {
               .reduce((acc, transaction) => {
                 return acc + Number(transaction.amount);
               }, 0);
+             
             const expenceCategoryTransactionsPercentage =
               (expenceCategoryTransactionsAmount / totalExpenseAmount) * 100;
+                   
             return (
               <div>
                 <p>{category.label}</p>

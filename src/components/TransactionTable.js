@@ -72,7 +72,7 @@ function TransactionTable({
 
   return (
     <div>
-      <Card>
+      
        <Table verticalSpacing="md" fontSize="sm" striped>
        <thead>
         <tr>
@@ -89,7 +89,7 @@ function TransactionTable({
     
     
     </Table> 
-    </Card>
+   
    
   
    
